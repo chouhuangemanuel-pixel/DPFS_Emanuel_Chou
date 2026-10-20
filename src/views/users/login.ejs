@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - TechStore</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="auth-header">
+        <a href="../views/index.html" class="back-arrow">&lt;</a>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL / FORMULARIO DE LOGIN -->
+    <main class="main-container auth-main">
+        <section class="auth-card">
+            <h2>Iniciar Sesión</h2>
+
+            <form action="#" method="POST" class="auth-form">
+                
+                <!-- Correo o Usuario -->
+                <div class="form-group">
+                    <input type="text" id="user" name="user" placeholder="Correo electrónico / Usuario" required class="form-input">
+                </div>
+
+                <!-- Contraseña -->
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required class="form-input">
+                </div>
+
+                <!-- Enlace de recuperación -->
+                <div class="form-help">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <!-- Botón de Ingresar -->
+                <button type="submit" class="btn-primary-large">Ingresar</button>
+            </form>
+
+            <!-- Enlace a Registro -->
+            <div class="auth-switch">
+                <p>¿No tienes cuenta?</p>
+                <a href="../views/register.html">Regístrate aquí</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="auth-footer">
+        <p>© 2026 TechStore</p>
+        <div class="footer-links">
+            <a href="#">Términos y condiciones</a> · <a href="#">Privacidad</a>
+        </div>
+    </footer>
+
+</body>
+</html>

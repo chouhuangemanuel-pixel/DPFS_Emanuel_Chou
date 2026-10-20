@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto | TechStore</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="main-header">
+        <a href="../views/index.html" class="back-arrow">←</a>
+        <h1>TechStore</h1>
+        <a href="../views/productCart.html" class="cart-icon">🛒</a>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container detail-container">
+        
+        <!-- Imagen del producto -->
+        <div class="detail-img-card">
+            <img src="../images/Placa RTX 4060.jpg" alt="Placa de Video" class="detail-img">
+        </div>
+
+        <!-- Título y Precios -->
+        <h2 class="product-title">Placa de Video NVIDIA GeForce RTX 4060 8GB</h2>
+        <div class="product-price-box">
+            <span class="price-tag">$ 350.000</span>
+            <span class="installments">6 cuotas fijas de $ 58.333</span>
+        </div>
+
+        <!-- Selector de cantidad -->
+        <div class="quantity-selector">
+            <button type="button" class="qty-btn">-</button>
+            <span class="qty-number">1</span>
+            <button type="button" class="qty-btn">+</button>
+        </div>
+
+        <!-- Botón de compra -->
+        <button type="button" class="btn-primary-large">Agregar al Carrito</button>
+
+        <!-- Especificaciones Técnicas comunes -->
+        <section class="tech-specs">
+            <h3>Especificaciones Técnicas</h3>
+            <div class="spec-row">
+                <span class="spec-name">Chipset</span>
+                <span class="spec-value">NVIDIA RTX 4060</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-name">Memoria VRAM</span>
+                <span class="spec-value">8 GB GDDR6</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-name">Interfaz</span>
+                <span class="spec-value">PCI Express 4.0</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-name">Conectividad</span>
+                <span class="spec-value">DisplayPort / HDMI</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-nav">
+            <a href="#">Ayuda</a> | <a href="#">Contacto</a> | <a href="#">Términos</a>
+        </div>
+        <p>© 2026 TechStore</p>
+    </footer>
+
+</body>
+</html>

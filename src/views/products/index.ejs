@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Incluimos el head -->
+    <%- include('../partials/head') %>
+
+<body>
+    <!-- Incluimos el header y la barra de búsqueda -->
+    <%- include('../partials/header') %>
+
+    <main class="main-container">
+        
+        <!-- 3. BANNER PRINCIPAL (HERO) - Contenido único de la Home -->
+        <section class="hero-banner">
+            <h2>OFERTAS EN PLACAS DE VIDEO</h2>
+        </section>
+
+        <!-- 4. SECCIÓN DE PRODUCTOS DESTACADOS - Contenido único de la Home -->
+        <section class="featured-products">
+            <h2>Destacados</h2>
+
+            <div class="products-grid">
+                
+                <!-- Tarjeta 1 -->
+                <article class="product-card">
+                    <div class="product-img-container">
+                        <img src="/images/Placa RTX 4060.jpg" alt="Placa RTX 4060" class="produc-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Placa RTX 4060</h3>
+                        <p class="price">$ 350.000</p>
+                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="product-card">
+                    <div class="product-img-container">
+                        <img src="/images/Placa RTX 4070.jpg" alt="Placa RTX 4070" class="produc-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Placa RTX 4070</h3>
+                        <p class="price">$ 520.000</p>
+                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="product-card">
+                    <div class="product-img-container">
+                        <img src="/images/Placa RX 7600.jpg" alt="Placa RX 7600" class="produc-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Placa RX 7600</h3>
+                        <p class="price">$ 280.000</p>
+                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="product-card">
+                   <div class="product-img-container">
+                        <img src="/images/Placa RTX 4080.jpg" alt="Placa RTX 4080" class="produc-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Placa RTX 4080</h3>
+                        <p class="price">$ 890.000</p>
+                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Incluimos el footer -->
+    <%- include('../partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - TechStore</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="main-header cart-header">
+        <a href="../views/index.html" class="back-arrow">←</a>
+        <h1>Mi Carrito </h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container cart-container">
+        
+        <!-- Producto único del carrito (RTX 4060) -->
+        <article class="cart-item">
+            <div class="cart-img-placeholder">
+                <img src="../images/Placa RTX 4060.jpg" alt="Placa RTX 4060" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div class="cart-item-details">
+                <h3>Placa RTX 4060</h3>
+                <p class="cart-item-price">$ 350.000</p>
+                <div class="cart-actions">
+                    <div class="quantity-selector small-qty">
+                        <button type="button" class="qty-btn">-</button>
+                        <span class="qty-number">1</span>
+                        <button type="button" class="qty-btn">+</button>
+                    </div>
+                    <button type="button" class="delete-btn" aria-label="Eliminar">🗑️</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Resumen de Costos -->
+        <section class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$ 350.000</span>
+            </div>
+            <div class="summary-row">
+                <span>Envío</span>
+                <span>$ 15.000</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span>$ 365.000</span>
+            </div>
+        </section>
+
+        <!-- Botón de Continuar Compra -->
+        <button type="button" class="btn-primary-large btn-checkout">Continuar Compra</button>
+
+    </main>
+
+    <!-- NAVEGACIÓN INFERIOR (Móvil) -->
+    <nav class="bottom-nav">
+        <a href="../views/index.html">🏠<br>Inicio</a>
+        <a href="#">🔍<br>Buscar</a>
+        <a href="productCart.html" class="active">🛒<br>Carrito</a>
+        <a href="login.html">👤<br>Perfil</a>
+    </nav>
+
+</body>
+</html>

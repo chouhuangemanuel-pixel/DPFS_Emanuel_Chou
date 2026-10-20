@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - TechStore</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="auth-header">
+        <a href="../views/index.html" class="back-arrow">&lt;</a>
+        <span class="auth-brand">TechStore</span>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL / FORMULARIO DE REGISTRO -->
+    <main class="main-container auth-main">
+        <section class="auth-card register-card">
+            <h2>Crear Cuenta</h2>
+            <p class="auth-subtitle">Completa tus datos</p>
+
+            <form action="#" method="POST" class="auth-form">
+                
+                <!-- Nombre completo -->
+                <div class="form-group">
+                    <input type="text" id="fullname" name="fullname" placeholder="Nombre completo" required class="form-input">
+                </div>
+
+                <!-- Correo electrónico -->
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="form-input">
+                </div>
+
+                <!-- Contraseña -->
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required class="form-input">
+                </div>
+
+                <!-- Confirmar Contraseña -->
+                <div class="form-group">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar contraseña" required class="form-input">
+                </div>
+
+                <!-- Checkbox Términos y Condiciones -->
+                <div class="form-checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Acepto los términos y condiciones</label>
+                </div>
+
+                <!-- Botón de Registrarse -->
+                <button type="submit" class="btn-primary-large">Registrarse</button>
+            </form>
+
+            <!-- Enlace a Login -->
+            <div class="auth-switch">
+                <p>¿Ya tienes cuenta?</p>
+                <a href="../views/login.html">Inicia sesión</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="auth-footer">
+        <p>© 2026 TechStore. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
