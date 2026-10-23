@@ -1,15 +1,21 @@
 <header class="main-header">
-    <div class="logo">
-        <h1>TechStore</h1>
+    <div class="top-bar">
+        <a href="/" class="logo-link">
+            <h1>TechHardware</h1>
+        </a>
+        <div class="header-icons">
+            <a href="/products/create" class="add-icon" title="Crear nuevo producto" style="color: #fff; text-decoration: none; font-size: 1.1rem; display: flex; align-items: center;">➕</a>
+            <a href="/search" class="search-icon" aria-label="Buscar">🔍</a>
+            <a href="/cart" class="cart-icon" aria-label="Carrito de compras">🛒</a>
+        </div>
     </div>
-    <div class="header-icons">
-        <a href="#" aria-label="Buscar"><i class="fas fa-search"></i>🔍</a>
-        <a href="/products/productCart" aria-label="Carrito"><i class="fas fa-shopping-bag"></i>🛍️</a>
+    
+    <!-- Barra de búsqueda -->
+    <div class="search-bar-container">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="keywords" placeholder="Buscar productos..." class="search-input">
+        </form>
     </div>
 </header>
 
-<section class="search-section">
-    <form action="#" method="GET">
-        <input type="text" placeholder="Buscar productos..." class="search-input">
-    </form>
-</section>
+</header>

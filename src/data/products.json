@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Placa RTX 4060",
+    "description": "Placa gráfica de última generación ideal para gaming en 1080p con tecnologías avanzadas.",
+    "price": 350000,
+    "category": "Placas de Video",
+    "image": "Placa RTX 4060.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Placa RTX 4070",
+    "description": "Alto rendimiento y potencia superior para creadores de contenido y entusiastas del gaming en 1440p.",
+    "price": 520000,
+    "category": "Placas de Video",
+    "image": "Placa RTX 4070.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Placa RX 7600",
+    "description": "Excelente relación calidad-precio para jugar con fluidez y gran tasa de refresco.",
+    "price": 280000,
+    "category": "Placas de Video",
+    "image": "Placa RX 7600.jpg"
+  }
+]

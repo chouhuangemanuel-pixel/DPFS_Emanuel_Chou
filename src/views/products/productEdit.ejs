@@ -3,14 +3,58 @@
 <%- include('../partials/head') %>
 <body>
     <%- include('../partials/header') %>
-    <main class="main-container" style="padding: 40px; text-align: center;">
-        <h2>Formulario de Edición de Productos</h2>
-        <form action="#" method="POST" style="margin-top: 20px;">
-            <input type="text" value="Placa RTX 4060 (Ejemplo a editar)" style="padding: 10px; width: 300px; display: block; margin: 10px auto;"><br>
-            <input type="number" value="350000" style="padding: 10px; width: 300px; display: block; margin: 10px auto;"><br>
-            <button type="submit" style="padding: 10px 20px;">Modificar Producto</button>
-        </form>
+    
+    <main class="main-container auth-main">
+        <section class="auth-card" style="max-width: 440px; margin: 0 auto;">
+            <h2>Editar Producto</h2>
+            <p class="auth-subtitle">Modifica los datos de: <strong><%= product.name %></strong></p>
+
+            <form action="/products/<%= product.id %>?_method=PUT" method="POST" class="auth-form">
+                <!-- Nombre del producto -->
+                <div class="form-group" style="text-align: left;">
+                    <label style="font-size: 0.85rem; color: #555; display: block; margin-bottom: 5px;">Nombre:</label>
+                    <input type="text" name="name" value="<%= product.name %>" required class="form-input">
+                </div>
+
+                <!-- Precio -->
+                <div class="form-group" style="text-align: left;">
+                    <label style="font-size: 0.85rem; color: #555; display: block; margin-bottom: 5px;">Precio ($):</label>
+                    <input type="number" name="price" value="<%= product.price %>" required class="form-input">
+                </div>
+
+                <!-- Categoría -->
+                <div class="form-group" style="text-align: left;">
+                    <label style="font-size: 0.85rem; color: #555; display: block; margin-bottom: 5px;">Categoría:</label>
+                    <input type="text" name="category" value="<%= product.category %>" required class="form-input">
+                </div>
+
+                <!-- Descripción -->
+                <div class="form-group" style="text-align: left;">
+                    <label style="font-size: 0.85rem; color: #555; display: block; margin-bottom: 5px;">Descripción:</label>
+                    <textarea name="description" class="form-input" rows="3" style="resize: vertical;"><%= product.description %></textarea>
+                </div>
+
+                <!-- Selección de imagen -->
+                <div class="form-group" style="text-align: left;">
+                    <label style="font-size: 0.85rem; color: #555; display: block; margin-bottom: 5px;">Imagen del producto:</label>
+                    <select name="image" class="form-input">
+                        <option value="Placa RTX 4060.jpg" <%= product.image === 'Placa RTX 4060.jpg' ? 'selected' : '' %>>Placa RTX 4060</option>
+                        <option value="Placa RTX 4070.jpg" <%= product.image === 'Placa RTX 4070.jpg' ? 'selected' : '' %>>Placa RTX 4070</option>
+                        <option value="Placa RX 7600.jpg" <%= product.image === 'Placa RX 7600.jpg' ? 'selected' : '' %>>Placa RX 7600</option>
+                        <option value="Placa RTX 4080.jpg" <%= product.image === 'Placa RTX 4080.jpg' ? 'selected' : '' %>>Placa RTX 4080</option>
+                    </select>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" class="btn-primary-large">Guardar Cambios</button>
+            </form>
+
+            <a href="/products/<%= product.id %>" style="display: block; text-align: center; margin-top: 15px; color: #4389eb; text-decoration: none; font-size: 0.9rem;">
+                ← Cancelar y volver al detalle
+            </a>
+        </section>
     </main>
+
     <%- include('../partials/footer') %>
 </body>
 </html>

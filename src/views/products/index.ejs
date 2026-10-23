@@ -9,66 +9,31 @@
 
     <main class="main-container">
         
-        <!-- 3. BANNER PRINCIPAL (HERO) - Contenido único de la Home -->
+        <!-- 3. BANNER PRINCIPAL (HERO) -->
         <section class="hero-banner">
             <h2>OFERTAS EN PLACAS DE VIDEO</h2>
         </section>
 
-        <!-- 4. SECCIÓN DE PRODUCTOS DESTACADOS - Contenido único de la Home -->
+        <!-- 4. SECCIÓN DE PRODUCTOS DESTACADOS -->
         <section class="featured-products">
             <h2>Destacados</h2>
 
+            <!-- Bucle que lee los productos desde el JSON -->
             <div class="products-grid">
-                
-                <!-- Tarjeta 1 -->
-                <article class="product-card">
-                    <div class="product-img-container">
-                        <img src="/images/Placa RTX 4060.jpg" alt="Placa RTX 4060" class="produc-img">
-                    </div>
-                    <div class="product-info">
-                        <h3>Placa RTX 4060</h3>
-                        <p class="price">$ 350.000</p>
-                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
-                    </div>
-                </article>
-
-                <!-- Tarjeta 2 -->
-                <article class="product-card">
-                    <div class="product-img-container">
-                        <img src="/images/Placa RTX 4070.jpg" alt="Placa RTX 4070" class="produc-img">
-                    </div>
-                    <div class="product-info">
-                        <h3>Placa RTX 4070</h3>
-                        <p class="price">$ 520.000</p>
-                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
-                    </div>
-                </article>
-
-                <!-- Tarjeta 3 -->
-                <article class="product-card">
-                    <div class="product-img-container">
-                        <img src="/images/Placa RX 7600.jpg" alt="Placa RX 7600" class="produc-img">
-                    </div>
-                    <div class="product-info">
-                        <h3>Placa RX 7600</h3>
-                        <p class="price">$ 280.000</p>
-                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
-                    </div>
-                </article>
-
-                <!-- Tarjeta 4 -->
-                <article class="product-card">
-                   <div class="product-img-container">
-                        <img src="/images/Placa RTX 4080.jpg" alt="Placa RTX 4080" class="produc-img">
-                    </div>
-                    <div class="product-info">
-                        <h3>Placa RTX 4080</h3>
-                        <p class="price">$ 890.000</p>
-                        <a href="/products/productDetail" class="btn-buy">Ver / Comprar</a>
-                    </div>
-                </article>
-
+                <% products.forEach(product => { %>
+                    <article class="product-card">
+                        <div class="product-img-container">
+                            <img src="/images/<%= product.image %>" alt="<%= product.name %>" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3><%= product.name %></h3>
+                            <p class="price">$ <%= product.price.toLocaleString('es-AR') %></p>
+                            <a href="/products/<%= product.id %>" class="btn-buy">Ver / Comprar</a>
+                        </div>
+                    </article>
+                <% }) %>
             </div>
+
         </section>
 
     </main>

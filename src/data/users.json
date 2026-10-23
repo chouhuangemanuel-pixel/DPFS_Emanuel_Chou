@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "firstName": "Emanuel",
+    "lastName": "Chou",
+    "email": "admin@techstore.com",
+    "password": "hashed_password_example",
+    "category": "Admin",
+    "image": "default-avatar.png"
+  }
+]
